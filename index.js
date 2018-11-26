@@ -7,6 +7,7 @@ const app = express()
 
 class Auction {
   constructor() {
+    this.id = new Number()
     this.live = new Boolean()
     this.bids = new Array()
     this.seller = new Object()
