@@ -44,6 +44,7 @@ const getLive = (req, res) => {
 }
 
 const getLiveByUser = (req, res) => {
+  const user = req.params.user
   // connect to mongoDB with mongoose 
   res.json({
     data: []
@@ -58,6 +59,7 @@ const getFinished = (req, res) => {
 }
 
 const getFinishedByUser = (req, res) => {
+  const user = req.params.user
   // connect to mongoDB with mongoose 
   res.json({
     data: []
@@ -65,14 +67,17 @@ const getFinishedByUser = (req, res) => {
 }
 
 const setBid = (req, res) => {
+  const id = req.params.id
   // connect to mongoDB with mongoose 
 }
 
 const unsetBid = (req, res) => {
+  const id = req.params.id
   // connect to mongoDB with mongoose 
 }
 
 const getDetails = (req, res) => {
+  const id = req.params.id
   // connect to mongoDB with mongoose 
 }
 
